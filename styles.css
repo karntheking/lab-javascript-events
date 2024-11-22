@@ -1,0 +1,88 @@
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    line-height: 1.6;
+    background-color: #fffbea;
+    color: #333;
+}
+
+/* Section Styling */
+section {
+    border: 2px solid #000;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #fff8d6;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Headers */
+section h2 {
+    margin-top: 0;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* Buttons */
+button {
+    background-color: #000;
+    color: #ffdd00;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: #333;
+    color: #ffe066;
+}
+
+/* Input Fields */
+input[type="text"] {
+    padding: 8px;
+    width: 80%;
+    border: 2px solid #000;
+    border-radius: 4px;
+    font-size: 14px;
+    margin: 5px 0;
+    background-color: #fffbea;
+    color: #333;
+}
+
+input[type="text"]:focus {
+    border-color: #ffdd00;
+    outline: none;
+}
+
+/* Form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Container for Event Delegation */
+#button-container {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+#button-container button {
+    width: 100px;
+}
+
+/* Messages */
+p {
+    font-size: 14px;
+    color: #000;
+    margin: 10px 0 0;
+    padding: 5px;
+    background-color: #ffedba;
+    border: 1px solid #ffd700;
+    border-radius: 4px;
+}
