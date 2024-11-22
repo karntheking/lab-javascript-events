@@ -25,3 +25,10 @@ focusInput.addEventListener('focus', () => {
 focusInput.addEventListener('blur', () => {
     document.getElementById('focus-message').textContent = "Input lost focus!";
 });
+
+// Event Delegation
+document.getElementById('button-container').addEventListener('click', (event) => {
+    if (event.target.tagName === 'BUTTON') {
+        document.getElementById('delegate-message').textContent = `You clicked: ${event.target.textContent}`;
+    }
+});
