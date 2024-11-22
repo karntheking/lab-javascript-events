@@ -14,5 +14,14 @@ document.getElementById('key-input').addEventListener('keydown', (event) => {
 // Form Events
 document.getElementById('sample-form').addEventListener('submit', (event) => {
     event.preventDefault();
-    document.getElementById('form-message').textContent = "Form submitted!";
+    document.getElementById('form-message').textContent = "Form submitted! Thank you.";
+});
+
+// Focus and Blur Events
+const focusInput = document.getElementById('focus-input');
+focusInput.addEventListener('focus', () => {
+    document.getElementById('focus-message').textContent = "Input is focused!";
+});
+focusInput.addEventListener('blur', () => {
+    document.getElementById('focus-message').textContent = "Input lost focus!";
 });
